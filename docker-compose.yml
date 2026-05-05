@@ -1,0 +1,5 @@
+backend:
+  build: .
+  container_name: node_backend
+  ports:
+    - "7000:7000"   # 👈 aquí el cambio
