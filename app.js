@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+
 require('dotenv').config();
 
 require('./config/database'); // conexión a postgres
@@ -11,7 +12,7 @@ app.use(express.json());
 
 // 👇 Ruta de prueba
 app.get('/', (req, res) => {
-  res.send('Servidor funcionando correctamente 🚀');
+  res.send('Servidor funcionando correctamente');
 });
 
 // 👇 Importar rutas
