@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 const productoRoutes = require('./routes/producto.routes');
 
 // 👇 Usar rutas
-app.use('/api/producto', productoRoutes);
+app.use('/productos', productoRoutes);
 
 // Puerto dinámico (IMPORTANTE para Render)
 const PORT = process.env.PORT || 7000;
